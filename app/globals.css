@@ -42,3 +42,45 @@
     @apply w-full;
   }
 }
+
+@layer components {
+  /* Custom component styles using Tailwind utilities */
+  .header-gradient {
+    @apply bg-gradient-to-br from-gray-900 to-gray-600;
+  }
+  
+  .table-header {
+    @apply bg-gray-100 border-b border-gray-300;
+  }
+  
+  .table-row-even {
+    @apply bg-gray-50;
+  }
+  
+  .table-row-odd {
+    @apply bg-white;
+  }
+  
+  .table-cell {
+    @apply px-6 py-3 text-sm;
+  }
+  
+  .loading-spinner {
+    @apply flex-1 justify-center items-center;
+  }
+}
+
+@layer utilities {
+  /* Custom utility classes */
+  .page-container {
+    @apply flex-1;
+  }
+  
+  .centered-content {
+    @apply flex-1 justify-center items-center;
+  }
+  
+  .main-content {
+    @apply p-6 flex-1 items-center;
+  }
+}
